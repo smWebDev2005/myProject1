@@ -1,166 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery</title>
-    <link rel="stylesheet" href="./styleScheet/style.css">
-</head>
-<body>
-    <div class="artContainer">
-        <div class="navBar">
-            <div class="artLogo">
-                <img src="./img/logo.png" alt="">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Food Hub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+       <img src="assets/img/logo.png" alt="">
+       <!--<h1 class="sitename">Pakistani Food Hub</h1>
+       <span>.</span>-->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#ourmenu"> Our Menu</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#book-a-table">Reserve a Table</a>
+      
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-between">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up"> Indulge in our delectable cuisine.</h2>
+            <p data-aos="fade-up" data-aos-delay="100">We are a team of passionate food enthusiasts bringing you the best of Pakistani cuisine, beautifully crafted with love.</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#reserve-a-table" class="btn-get-started">Reserve a Table</a>
+              <a href="assets/img/Food_Promo2_video.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
-            <div class="mainMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#salescollection">Sales Collection</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contactUs">Contact Us</a></li> 
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="aboutus" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p><span> Discover more</span> <span class="description-title">about our Hub</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/the-pakistani.jpg" class="img-fluid mb-4" alt="">
+            <div class="book-a-table">
+              <h3>Reserve a Table</h3>
+              <p>(+92) 328 7050874</p>
             </div>
-            <div class="btnSearch">
-                    <input type="text">
-                    <button>Search</button>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Experience the exquisite tastes of Pakistani cuisine, meticulously prepared with love and heritage, delivering the essence of Pakistan to your dining experience.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Discover our Pakistani all types of Food Hub and enjoy high-quality dishes made with dedication and attention to detail.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Our dedicated team is committed to delivering top-notch service, guaranteeing that your time at our Pakistani Food Hub is both delightful and memorable.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Come and support the diverse culinary traditions of Pakistan by savoring each delicious meal with us where you found all types of food.</span></li>
+              </ul>
+  
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/about2.jpg" class="img-fluid" alt="">
+                <a href="assets/img/Food_Promo_Video.mp4" class="glightbox pulsating-play-btn"></a>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="heroSection" id="home">
-            <h1>Art <br> <span>Gallery</span></h1>
-        </div>
-        <div class="headingText">
-            <h1>About Us</h1>
-        </div>
-        <div class="aboutUs" id="aboutus">
-            <p>An art gallery is a carefully selected venue designed to exhibit and sell visual art, including paintings, sculptures and photography. It encourages the appreciation of art and cultural involvement through the display of various artists creations, organizing exhibitions, and frequently arranging events, workshops and educational initiatives to link the community with the art scene.</p>
-        </div>
+      </div>
 
-        <div class="headingText">
-            <h1>Sales Collection</h1>
-        </div>
+    </section><!-- /About Section -->
 
-        <div class="saleCards" id="salescollection">
-            <div class="card">
-                <img src="./img/R1.jpeg" alt="">
-                <h2>Rs.3000</h2>
-                <p>This painting depicts a charming countryside house at twilight, bathed in the soft glow of evening lights. The sky is adorned with stars and a crescent moon. A bicycle rests near a lamp post, picturesque scene.</p>
-                <button>Order Now</button>
-            </div>
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section light-background">
 
-            <div class="card">
-                <img src="./img/R3.jpg" alt="">
-                <h2>Rs.3500</h2>
-                <p>Experience the vibrant colors of nature with this captivating art piece, featuring a striking silhouette of a tree against a backdrop of vivid, swirling clouds.Elevate your decor with this stunning, eye-catching masterpiece.</p>
-                <button>Order Now</button>
-            </div>
+      <div class="container">
 
-            <div class="card">
-                <img src="./img/R10.jpg" alt="">
-                <h2>Rs.2000</h2>
-                <p>The artwork showcases a delightful rural residence during dusk, illuminated by the gentle radiance of nightfall. The heavens are embellished with twinkling stars.Imparting a hint of this tranquil setting.</p>
-                <button>Order Now</button>
-            </div>
+        <div class="row gy-4">
 
-            <div class="card">
-                <img src="./img/R4.jpg" alt="">
-                <h2>Rs.2500</h2>
-                <p>The art piece presents a charming countryside home at twilight, bathed in the soft glow of evening lights. The sky is adorned with shimmering stars and a crescent moon. A bicycle rests by a lamp post, completing the picturesque scene.</p>
-                <button>Order Now</button>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Why always Pak Food Hub?</h3>
+              <p>
+                Indulge in exceptional quality at our Pakistani cuisine destination, where every dish is prepared with top-notch ingredients for a gourmet experience. Our staff's speed guarantees efficient service and a smooth dining experience and dedicated work ethic. Whether it's traditional favorites or inventive dishes, each bite represents authenticity and culinary expertise. We are committed to showcasing our vibrant culinary heritage through successful marketing efforts, solidifying our food hub's renown for exceptional flavors and meaningful community engagement.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
             </div>
+          </div><!-- End Why Box -->
 
-            <div class="card">
-                <img src="./img/R16.jpg" alt="">
-                <h2>Rs.2500</h2>
-                <p>This mesmerizing artwork captures the rich hues of nature with a bold tree silhouette. Perfect for adding warmth and vitality to any room. Enhance your interior design with this striking masterpiece, guaranteed to grab attention and transform your space.</p>
-                <button>Order Now</button>
-            </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="card">
-                <img src="./img/R6.webp" alt="">
-                <h2>Rs.2000</h2>
-                <p>Enhance your living area with this top-notch artwork, showcasing a rain-drenched park illuminated by radiant street lights. The vivid hues and expert brushstrokes form a captivating, making it a must-have for your art collection.</p>
-                <button>Order Now</button>
-            </div>
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Menu Variety</h4>
+                  <p>"Discover our wide range of menu options, featuring a delightful selection of traditional Pakistani cuisine and culinary delights."</p>
+                </div>
+              </div><!-- End Icon Box -->
 
-            <div class="card">
-                <img src="./img/R17.jpg" alt="">
-                <h2>Rs.2000</h2>
-                <p>The lively and enchanting beauty of this exceptional painting, which presents a rain-soaked park illuminated by glowing street lamps and high-quality masterpiece.The vivid hues and expert brushstrokes form a captivating, immersive scene.</p>
-                <button>Order Now</button>
-            </div>
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Efficient Service</h4>
+                  <p>"Experience our streamlined service for prompt and efficient dining, ensuring a seamless culinary journey."</p>
+                </div>
+              </div><!-- End Icon Box -->
 
-            <div class="card">
-                <img src="./img/R8.webp" alt="">
-                <h2>Rs.2000</h2>
-                <p>Transform your living area with this exquisite artwork, depicting a rain-soaked park illuminated by radiant street lights. The vivid colors brushstrokes create a captivating scene, making it an essential addition to your art collection.</p>
-                <button>Order Now</button>
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Delivery Services</h4>
+                  <p>"Enjoy hassle-free delivery services, bringing the authentic flavors of Pakistan right to your doorstep."</p>
+                </div>
+              </div><!-- End Icon Box -->
+
             </div>
-            <div class="card">
-                <img src="./img/R9.jpeg" alt="">
-                <h2>Rs.2000</h2>
-                <p>The artwork depicts a charming rural residence at dusk, illuminated by the gentle glow of nightfall. Twinkling stars and a crescent moon adorn the sky, while verdant foliage surrounds the home. A bicycle by a streetlight adds a nostalgic touch.</p>
-                <button>Order Now</button>
-            </div>
+          </div>
+
         </div>
 
-        <div class="headingText">
-            <h1>Our Services</h1>
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="6000" data-purecounter-duration="100" class="purecounter"></span>
+              <p>Happy customer</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Our Recipes</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours of availability</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
         </div>
 
-        <div class="paraServices">
-            <p>Our art gallery offers a diverse range of services to cater to all your artistic needs. These services include art acquisition, sales, leasing, and investment advisory. Additionally, we provide market analysis, art management, and customized marketing strategies. Our team of skilled professionals is committed to delivering seamless transactions and personalized assistance, ensuring that we meet all your art-related requirements efficiently.</p>
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Menu Section -->
+    <section id="ourmenu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Menu</h2>
+        <p><span>Check Our</span> <span class="description-title">Delicious Menu</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Desi Food</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Fast Food</h4>
+            </a><!-- End tab nav item -->
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Street Food</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Desserts Food</h4>
+            </a>
+          </li><!-- End tab nav item -->
+          
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Desi</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/baryani.png" class="glightbox"><img src="assets/img/menu/baryani.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Biryani</h4>
+                <p class="price">
+               Price Rs: 400
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/karahi.png" class="glightbox"><img src="assets/img/menu/karahi.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Karahi </h4>
+                <p class="price">
+                Price Rs: 1,100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Nihari.png" class="glightbox"><img src="assets/img/menu/Nihari.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Nihari</h4>
+                
+                <p class="price">
+                  Price  Rs: 590
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/dal_chawal.png" class="glightbox"><img src="assets/img/menu/dal_chawal.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Daal Chawal</h4>
+                <p class="price">
+                  Price Rs: 340
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Kofta_Curry.png" class="glightbox"><img src="assets/img/menu/Kofta_Curry.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Kofta Curry</h4>
+                <p class="price">
+                  Price Rs: 410
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/kari_pakora.png" class="glightbox"><img src="assets/img/menu/kari_pakora.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Curry Pakora</h4>
+                <p class="price">
+                  Price  Rs: 290
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Fast</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/chicken pratha roll.jpg" class="glightbox"><img src="assets/img/menu/chicken pratha roll.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Chicken Roll Paratha</h4>
+                <p class="price">
+                  Price Rs: 380 
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/chapli_kabab.png" class="glightbox"><img src="assets/img/menu/chapli_kabab.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Chapli Kebab</h4>
+                
+                <p class="price">
+                  Price Rs: 730
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/burger.png" class="glightbox"><img src="assets/img/menu/burger.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Chicken Tikka Burger</h4>
+                
+                <p class="price">
+                  Price  Rs: 350
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Loaded_Fries.png" class="glightbox"><img src="assets/img/menu/Loaded_Fries.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Loaded Fries</h4>
+                <p class="price">
+                  Price  Rs: 780
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Pizza.png" class="glightbox"><img src="assets/img/menu/Pizza.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Pizza</h4>
+                <p class="price">
+                  Price  Rs: 1,100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Shawarma.png" class="glightbox"><img src="assets/img/menu/Shawarma.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Shawarma</h4>
+                <p class="price">
+                  Price  Rs: 480
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Street</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/chana chat.png" class="glightbox"><img src="assets/img/menu/chana chat.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Chana Chaat</h4>
+                <p class="price">
+                  Price  Rs: 440
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Dahi-bhalla.png" class="glightbox"><img src="assets/img/menu/Dahi-bhalla.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Dahi Bhalla</h4>
+                <p class="price">
+                  Price  Rs: 150
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Fruit_Chaat.png" class="glightbox"><img src="assets/img/menu/Fruit_Chaat.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Fruit Chaat</h4>
+                <p class="price">
+                  Price  Rs: 280 
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/pani_puri.png" class="glightbox"><img src="assets/img/menu/pani_puri.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Pani Puri</h4>
+                <p class="price">
+                  Price  Rs: 120
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Samosa.png" class="glightbox"><img src="assets/img/menu/Samosa.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Samosa</h4>
+                <p class="price">
+                  Price Rs: 50
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Halwa_puri.png" class="glightbox"><img src="assets/img/menu/Halwa_puri.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Halwa Puri</h4>
+                <p class="price">
+                Price  Rs: 500
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Desserts</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Sohan_Halwa.png" class="glightbox"><img src="assets/img/menu/Sohan_Halwa.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Sohan Halwa</h4>
+                <p class="price">
+                Price  Rs: 230
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/cake.png" class="glightbox"><img src="assets/img/menu/cake.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Cake</h4>
+                <p class="price">
+                Price  Rs: 1800
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/donets.png" class="glightbox"><img src="assets/img/menu/donets.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Donuts</h4>
+      
+                <p class="price">
+                Price  Rs: 425
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Jalebi.png" class="glightbox"><img src="assets/img/menu/Jalebi.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Jalebi</h4>
+                <p class="price">
+                Price  Rs: 440
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/Kheer.png" class="glightbox"><img src="assets/img/menu/Kheer.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Kheer</h4>
+                <p class="price">
+                Price  Rs. 300
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/gulab_jamun.png" class="glightbox"><img src="assets/img/menu/gulab_jamun.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Gulab Jamun</h4>
+               
+                <p class="price">
+                Price  Rs: 300
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End  Menu Content -->
+
         </div>
 
-        <div class="servicesCard" id="services">
-            <div class="scard">
-                <img src="./img/R30.jpg" alt="">
-                <h2>Drawing</h2>
-                <p>Our art gallery's drawing service offers a unique opportunity for art enthusiasts and collectors to acquire custom, high-quality drawings. Whether you seek a personalized portrait, a detailed landscape, or an abstract piece, our dedicated team ensures exceptional creativity and customer satisfaction, delivering artworks that truly inspire.</p>
-            </div>
+      </div>
 
-            <div class="scard">
-                <img src="./img/R31.jpg" alt="">
-                <h2>Designing</h2>
-                <p>Our fashion designing service at the art gallery merges creativity and elegance to enhance your wardrobe. Our skilled designers craft unique, tailored fashion items that reflect your style and tastes. We also offer personalized consultations to ensure each piece  and perfectly complements your personal style.</p>
-            </div>
+    </section><!-- /Menu Section -->
 
-            <div class="scard">
-                <img src="./img/R11.jpg" alt="">
-                <h2>painting</h2>
-                <p>Our art gallery's painting service offers art lovers and collectors unique, high-quality customized paintings. Our skilled artists excel in various styles, from traditional to modern, ensuring each piece is a masterpiece. We provide personalized consultations to help you choose or request the perfect painting that aligns with your vision.</p>
-            </div>
 
-            <div class="scard">
-                <img src="./img/R26.jpg" alt="">
-                <h2>Art Management</h2>
-                <p>Our art gallery's Art Management service ensures expert handling and supervision of your collection. Our professionals provide comprehensive solutions, from acquiring and organizing to conserving and exhibiting your artworks. We manage logistics and evaluations to maintain, safeguard and appreciation.</p>
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>chefs</h2>
+        <p><span>Our</span> <span class="description-title">Proffesional Chefs<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/Male.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Ali</h4>
+                <span>Master Chef</span>
+                <p>Our Pak Food Hub's Master Chef is highly skilled at crafting delectable traditional dishes, skillfully combining flavors, and bringing joy to all.
+                </p>
+              </div>
             </div>
+          </div><!-- End Chef Team Member -->
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/female.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Miss. Sarah</h4>
+                <span>Patissier</span>
+                <p>The Patissier at our Pak Food Hub skillfully combines traditional flavors with modern techniques to create exceptional desserts that please every customer.</p>
+              </div>
+            </div>
+          </div><!-- End Chef Team Member -->
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/Male.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mr. Bilal</h4>
+                <span>Cook</span>
+                <p>Our Pak Food Hub's chef expertly crafts mouthwatering, traditional meals with dedication and expertise, guaranteeing a memorable dining experience.</p>
+              </div>
+            </div>
+          </div><!-- End Chef Team Member -->
+
         </div>
 
-        <div class="headingText" id="contactUs">
-            <h1>For Booking</h1>
-        </div>
-        <div class="bookingForm">
-            <form>
-                Customer Name:<input type="text" placeholder="Put Your Name"><Br>
-                Customer Email:<input type="email" placeholder="Put Your Email...."><Br>
-                Message:<textarea></textarea><br>
-                <input type="submit" value="submit">
+      </div>
+
+    </section><!-- /Chefs Section -->
+
+    <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reserve A Table</h2>
+        <p><span>Book Your</span> <span class="description-title">Stay With Us<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+              </div>
+
+              <div class="text-center mt-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your reservation request has been successfully submitted. We will be in touch shortly to confirm either by phone or email. Thank you!</div>
+                <button type="submit">Reserve a Table</button>
+              </div>
             </form>
+          </div><!-- End Reservation Form -->
+
         </div>
 
+      </div>
 
-        <footer>
-            <h5>Copyright &copy; 2024-2025  artgallery | <a href="">sm developer</a></h5>
-                <img src="./img/SocialIcons/faceb.png" alt="">
-                <img src="./img/SocialIcons/inst.png" alt="">
-                <img src="./img/SocialIcons/linked.png" alt="">
-                <img src="./img/SocialIcons/tiktok.png" alt="">
-                <img src="./img/SocialIcons/whats.png" alt="">
-        </footer>
+    </section><!-- /Book A Table Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p><span>Check</span> <span class="description-title">Our Gallery</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/galery-1.jpg"><img src="assets/img/gallery/galery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-9.jpg"><img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contactus" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p><span>Need Help?</span> <span class="description-title">Contact </span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-5">
+          <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Okara, Punjab, Pakistan</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>(+92) 328 7050874</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>pakfood507@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours<br></h3>
+                <p><strong>Mon-Sat:</strong> 9:00 AM - 2AM</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>Okara, Punjab, Pakistan</p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Phone:</strong> <span>(+92) 328 7050874</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sun:</strong> <span>9AM - 2AM</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://twitter.com" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
     </div>
 
+    <div class="container copyright text-center mt-4">
+      <p> <span>Copyright ©</span> <strong class="px-1 sitename">Saqib Moeen</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://smdeveloper479.netlify.app/">SM Developer</a>
+      </div>
+    </div>
 
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
