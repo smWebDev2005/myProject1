@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navBar
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: lightpink;
+}
+.navBar .artLogo img
+{
+width: 105px;
+height: 105px;
+}
+.mainMenu
+{
+display: flex;
+}
+.mainMenu li 
+{
+list-style: none;
+margin: 30px;
+}
+.mainMenu li a
+{
+text-decoration: none;
+font-size: 18px;
+font-weight: 600;
+}
+.mainMenu li a:hover{
+    color: lightblue;
+    
+}
+.btnSearch input
+{
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.btnSearch button
+{
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.heroSection
+{
+    width: 100%;
+    height: 80vh;
+    background: url("../img/R13.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroSection h1
+{
+    font-size: 100px;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    padding-top: 80px;
+    padding-left: 850px;
+}
+.heroSection h1 span{
+    color: hotpink;
+}
+.headingText
+{
+    text-align: center;
+    font-size: 25px;
+    color: hotpink;
+    margin: 50px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.aboutUs
+{
+width: 75%;
+margin: 30px auto;
+background-color: rgb(229, 253, 253);
+border-radius: 30px;
+padding: 50px;
+}
+.aboutUs p
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.9;
+    text-align: justify;
+}
+.saleCards
+{
+    width: 90%;
+    background-color: azure; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+.saleCards .card
+{
+    width: 300px;
+    height: 430px;
+    background-color: lightpink;
+    padding: 10px;
+    margin: 15px 15px;
+    cursor: pointer;
+}
+.saleCards .card:hover
+{
+    box-shadow: 3px 3px 4px rgba(0, 6, 0, 0.5);
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.saleCards .card h2
+{
+    margin-top: 10px;
+}
+.saleCards .card img{
+    width: 100%;
+    height: 50%;
+    
+}
+.saleCards .card p
+{
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.saleCards .card button
+{
+    padding: 5px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.paraServices
+{
+    width: 75%;
+    margin: 30px auto;
+    background-color:  rgb(229, 253, 253);
+    border-radius: 30px;
+    padding: 50px;
+}
+.paraServices p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.9;
+    text-align: justify;
+}
+.servicesCard
+{
+    width: 80%;
+    background-color: azure;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.servicesCard .scard{
+    width: 300px;
+    height: 500px;
+    background-color: burlywood;
+    margin: 0 10px;
+    border: 3px solid black;
+    
+}
+.servicesCard .scard:hover{
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.4);
+    transform: scale(1.1);
+    transition: all 0.4s ease-in;
+}
+.servicesCard .scard img
+{
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 20px;
+}
+.servicesCard .scard h2
+{
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    text-align: center;
+    margin: 10px 0;
+}
+.servicesCard .scard p{
+    text-align: center;
+    color: rgb(1, 67, 67);
+
+}
+
+.bookingForm
+{
+    width: 40%;
+    background-color: burlywood;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.bookingForm form
+{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+.bookingForm form input{
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.bookingForm form textarea{
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer
+{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:lightpink;
+}
+footer h1
+{
+    text-align: center;
+    padding: 70px;
+}
+footer img
+{
+    width: 45px;
+    height: 45px;
+}
